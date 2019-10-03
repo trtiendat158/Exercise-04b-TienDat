@@ -16,6 +16,10 @@ namespace UnitTestProject1
             int[] arr2 = new int[] { 1, 2, 3, 4, 5 };
             bool result3 = Program.IsContain5(arr2);
             Assert.AreEqual(true, result3);
+
+            int[] arr3 = new int[0];
+            bool result4 = Program.IsContain5(arr3);
+            Assert.AreEqual(false, result4);
         }
 
         [TestMethod]
