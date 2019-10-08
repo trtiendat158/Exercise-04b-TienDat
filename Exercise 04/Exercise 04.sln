@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise 04", "Exercise 04\Exercise 04.csproj", "{C9239834-D984-4762-BD29-D350E83A9AB3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{0F6A317A-CC0F-4984-A322-5CE5C0AB728D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draw", "Draw\Draw.csproj", "{ED9C1BD0-5232-49F6-A019-349492CB5DDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0F6A317A-CC0F-4984-A322-5CE5C0AB728D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F6A317A-CC0F-4984-A322-5CE5C0AB728D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F6A317A-CC0F-4984-A322-5CE5C0AB728D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED9C1BD0-5232-49F6-A019-349492CB5DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED9C1BD0-5232-49F6-A019-349492CB5DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED9C1BD0-5232-49F6-A019-349492CB5DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED9C1BD0-5232-49F6-A019-349492CB5DDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
