@@ -43,6 +43,18 @@ namespace Draw
                 Console.WriteLine("\nYour draw triangle: ");
                 DrawTriangle(n, c);
                 Console.WriteLine("\n-----------------------------------------------------------");
+                Console.WriteLine("\nYour draw w: ");
+                DrawW(n, c);
+                Console.WriteLine("\n-----------------------------------------------------------");
+                Console.WriteLine("\nYour draw a: ");
+                DrawA(n, c);
+                Console.WriteLine("\n-----------------------------------------------------------");
+                Console.WriteLine("\nYour draw x: ");
+                DrawX(n, c);
+                Console.WriteLine("\n-----------------------------------------------------------");
+                Console.WriteLine("\nYour draw plus: ");
+                DrawPlus(n, c);
+                Console.WriteLine("\n-----------------------------------------------------------");
 
                 Console.WriteLine("\n Do you want to continue ? Y/N ?");
                 string yn = Console.ReadLine();
@@ -154,6 +166,105 @@ namespace Draw
                 Console.WriteLine();
             }
             DrawHorizal(2 * n - 1, c);
+        }
+
+        public static void DrawW(int n, char c)
+        {
+            int a = 2 * n - 3, d = 0, b = 0;
+            for (int i = 0; i < n; i++)
+            {
+                DrawHorizal(b, ' ');
+                DrawHorizal(1, c);
+                DrawHorizal(a, ' ');
+                if (i != n - 1) DrawHorizal(1, c);
+                DrawHorizal(d, ' ');
+                if (i == 0) d++;
+                else d += 2;
+                if (i != 0) DrawHorizal(1, c);
+                DrawHorizal(a, ' ');
+                if (i != n - 1) DrawHorizal(1, c);
+                b++; a -= 2;
+                Console.WriteLine();
+            }
+       }
+
+        public static void DrawA(int n, char c)
+        {
+            int A = n, B = 0;
+            for (int i = 0; i <= n; i++)
+            {
+                DrawHorizal(A, ' ');
+                DrawHorizal(1, c);
+                if (i != 0)
+                {
+                    if (i != n / 2)
+                    {
+                        DrawHorizal(B, ' ');
+                    }
+                    else DrawHorizal(B, c);
+                    DrawHorizal(1, c);
+                    B += 2;
+                }
+                else B++;
+                A--;
+                Console.WriteLine();
+            }
+        }
+
+        public static void DrawX(int n, char c)
+        {
+            int A = n - 1, B = 0;
+            for (int i = 0; i < n / 2; i++)
+            {
+                DrawHorizal(B, ' ');
+                DrawHorizal(1, c);
+                DrawHorizal(A, ' ');
+                DrawHorizal(1, c);
+                A -= 2; B++;
+                Console.WriteLine();
+            }
+            if (n % 2 == 0)
+            {
+                DrawHorizal(n / 2, ' ');
+                DrawHorizal(1, c);
+                B = 1;
+                Console.WriteLine();
+            }
+            else
+            {
+                DrawHorizal(n / 2, ' ');
+                DrawHorizal(1, c);
+                DrawHorizal(1, c);
+                B = 2;
+                Console.WriteLine();
+            }
+            A = n / 2 - 1;
+            for (int j = 0; j < n / 2; j++)
+            {
+                DrawHorizal(A, ' ');
+                DrawHorizal(1, c);
+                DrawHorizal(B, ' ');
+                DrawHorizal(1, c);
+                A--; B += 2;
+                Console.WriteLine();
+            }
+        }
+
+        public static void DrawPlus(int n, char c)
+        {
+            for (int i = 0; i <= n; i++)
+            {
+                if (i != n / 2)
+                {
+                    DrawHorizal(n - 2, ' ');
+                    DrawHorizal(1, c);
+                    Console.WriteLine();
+                }
+                else
+                {
+                    DrawHorizal(n + 1, c); Console.WriteLine();
+                }
+            }
         }
     }
 }
